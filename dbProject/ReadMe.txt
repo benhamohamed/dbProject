@@ -14,7 +14,7 @@ Après installation de Docker                                                    
 												      *
 4 - Exécuter la commande : "docker run -d -v dbdata:/var/lib/postgresql/data --name db appliprof2:1.0"*
 												      *
-5 - Exécuter la commande : "docker run -d --name mytomcat -p 9090:8080 appliprof1:1.0"                *
+5 - Exécuter la commande : "docker run -d --name mytomcat --link db -p 9090:8080 appliprof1:1.0       *
 												      *
 6 - Accéder à l'application via l'adresse : "http://Votre adresse IP:9090/dbproject/accueil.jsp"      *
                                                                                                       *
